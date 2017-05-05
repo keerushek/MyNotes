@@ -7,15 +7,31 @@
 //
 
 import UIKit
+import RealmSwift
+
+let uiRealm = try! Realm()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var navigationController: UINavigationController?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        navigationController = UINavigationController()
+        let taskViewController: ViewController = ViewController()
+        self.navigationController?.pushViewController(taskViewController, animated: false)
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        self.window?.rootViewController = self.navigationController
+        
+        self.window?.backgroundColor = UIColor.blue
+        
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

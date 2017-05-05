@@ -14,6 +14,7 @@
 		12134B0C1EBC4E4000AEAB35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12134B0A1EBC4E4000AEAB35 /* LaunchScreen.storyboard */; };
 		12134B171EBC4E4000AEAB35 /* MyNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12134B161EBC4E4000AEAB35 /* MyNotesTests.swift */; };
 		12134B221EBC4E4000AEAB35 /* MyNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12134B211EBC4E4000AEAB35 /* MyNotesUITests.swift */; };
+		12134B311EBC984200AEAB35 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12134B301EBC984200AEAB35 /* Note.swift */; };
 		42A877CC821EB5C7002071EF /* Pods_MyNotesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7F9BF5F99BE75AEC4FB5BB /* Pods_MyNotesUITests.framework */; };
 		AB656AE757CBA25B45EA395B /* Pods_MyNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D36C2B6779E2AA6F4F42210 /* Pods_MyNotes.framework */; };
 		EB0A741D9DDB30722287DB72 /* Pods_MyNotesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 736A300317C8EE7AFFF36240 /* Pods_MyNotesTests.framework */; };
@@ -51,6 +52,7 @@
 		12134B1D1EBC4E4000AEAB35 /* MyNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12134B211EBC4E4000AEAB35 /* MyNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesUITests.swift; sourceTree = "<group>"; };
 		12134B231EBC4E4000AEAB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12134B301EBC984200AEAB35 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Note.swift; path = Data/Note.swift; sourceTree = "<group>"; };
 		53B1304F740DDC73239BF6B3 /* Pods-MyNotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotesTests/Pods-MyNotesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5610F1839BF2FFBA79CB3F6B /* Pods-MyNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotes/Pods-MyNotes.debug.xcconfig"; sourceTree = "<group>"; };
 		5B7F9BF5F99BE75AEC4FB5BB /* Pods_MyNotesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNotesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +116,7 @@
 		12134B001EBC4E4000AEAB35 /* MyNotes */ = {
 			isa = PBXGroup;
 			children = (
+				12134B2F1EBC980200AEAB35 /* Data */,
 				12134B011EBC4E4000AEAB35 /* AppDelegate.swift */,
 				12134B031EBC4E4000AEAB35 /* ViewController.swift */,
 				12134B051EBC4E4000AEAB35 /* Main.storyboard */,
@@ -140,6 +143,14 @@
 				12134B231EBC4E4000AEAB35 /* Info.plist */,
 			);
 			path = MyNotesUITests;
+			sourceTree = "<group>";
+		};
+		12134B2F1EBC980200AEAB35 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				12134B301EBC984200AEAB35 /* Note.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		52D117FDD772A7A134DB3992 /* Frameworks */ = {
@@ -448,6 +459,7 @@
 			files = (
 				12134B041EBC4E4000AEAB35 /* ViewController.swift in Sources */,
 				12134B021EBC4E4000AEAB35 /* AppDelegate.swift in Sources */,
+				12134B311EBC984200AEAB35 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,6 +712,7 @@
 				12134B281EBC4E4000AEAB35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12134B291EBC4E4000AEAB35 /* Build configuration list for PBXNativeTarget "MyNotesTests" */ = {
 			isa = XCConfigurationList;
@@ -708,6 +721,7 @@
 				12134B2B1EBC4E4000AEAB35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12134B2C1EBC4E4000AEAB35 /* Build configuration list for PBXNativeTarget "MyNotesUITests" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +730,7 @@
 				12134B2E1EBC4E4000AEAB35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
